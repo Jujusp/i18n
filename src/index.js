@@ -1,6 +1,6 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-import JobsList from "./components/jobslist";
+import App from './App'
 
-ReactDOM.render(<JobsList />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById('root'))
