@@ -1,5 +1,5 @@
 import React from 'react'
-import { FormattedDate, FormattedNumber } from 'react-intl'
+import { FormattedDate, FormattedNumber, FormattedMessage } from 'react-intl'
 
 const Job = (props) => {
     return (
@@ -8,10 +8,12 @@ const Job = (props) => {
             <td>{props.offer.name}</td>
             <td>{props.offer.company}</td>
             <td>
-                <FormattedNumber
-                    value={props.offer.salary}
+                <FormattedMessage
+                    id='Salary.mil'
+                    defaultMessage='{salary} million'
+                    values={{ salary: props.offer.salary }}
                     currency='COP'
-                ></FormattedNumber>
+                ></FormattedMessage>
             </td>
             <td>{props.offer.city}</td>
             <td>

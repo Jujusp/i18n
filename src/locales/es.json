@@ -2,6 +2,7 @@
 	"Position": "Nombre del cargo",
 	"Company": "Empresa",
 	"Salary": "Salario",
+	"Salary.mil" :  "{salary, plural, one {# Millón} other {# Millones}}",
 	"City": "Ciudad",
 	"PublicationDate": "Fecha de publicación",
 	"Views": "No. de visitas"
